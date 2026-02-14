@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding:20px;
+            direction:rtl;
+        }
+        input,select,button{
+            width:100%;
+            padding:10px;
+            margin-bottom: 10px;
+
+        }
+        button{
+            background: #e91e63;
+            color:#fff;
+            border:none;
+        }
+        
+.filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: #e91e63;
+  color: #fff;
+}
+
+.dish {
+  transition: 0.3s;
+}
+
+.dish:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 600px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+    .filters button {
+        width: 100%;
+    }
+    .dish img{
+        height: 200px;
+        object-fit: cover;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div id="loginDiv">
+  <input type="password" id="adminPass" placeholder="ادخل كلمة السر">
+  <button onclick="checkPassword()">دخول</button>
+   </div>
+
+<div id="dashboard" style="display:none;">
+    <h2>لوحة إدارة المنيو</h2>
+    
+   <input id="name" placeholder="اسم الطبق">
+    <input id="desc" placeholder="وصف الطبق">
+    <input id="price" placeholder="السعر">
+    <input id="img" placeholder="رابط الصورة">
+    <select id="category">
+        <option value="main">أطباق رئيسية</option>
+        <option value="drinks">مشروبات</option>
+        <option value="dessert">حلويات</option>
+
+    </select>
+    <button onclick="addDish()">إضافة طبق</button>
+    
+<div class="filters">
+  <button onclick="displayMenu('all')">الكل</button>
+  <button onclick="displayMenu('main')">أطباق رئيسية</button>
+  <button onclick="displayMenu('drinks')">مشروبات</button>
+  <button onclick="displayMenu('dessert')">حلويات</button>
+</div>
+</div>
+    <div  class="menuDiv" id="menuDiv"></div>
+
+    
+    <script src="scripts/admin.js"></script>
+
+    
+</body>
+</html>
