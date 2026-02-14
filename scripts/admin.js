@@ -38,7 +38,7 @@ function addDish() {
   const dish = {
     name: nameInput.value,
     desc: descInput.value,
-    price: priceInput.value,
+    price: parseInt(priceInput.value),
     img: imgInput.value || "https://via.placeholder.com/300x180",
     category: categorySelect.value
   };
