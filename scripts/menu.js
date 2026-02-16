@@ -13,7 +13,7 @@ let dishes = JSON.parse(localStorage.getItem("dishes")) || [
 const menuDiv = document.getElementById("menu");
 
 function displayDishes(category = "all") {
-  const dishes = JSON.parse(localStorage.getItem("dishes")) || [];
+  
   menuDiv.innerHTML ="";
   
   let filteredDishes = dishes;
