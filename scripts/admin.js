@@ -1,4 +1,4 @@
-const STORAGE_KEY = "dishes";
+
 const correctPassword = "ah146";
 
 let dishes = JSON.parse(localStorage.getItem("dishes")) || [];
