@@ -1,16 +1,20 @@
 const STORAGE_KEY = "dishes";
 let dishes = JSON.parse(localStorage.getItem(STORAGE_KEY));
-if (!dishes|| dishes.length === 0) {
+if (!dishes || dishes.length ===0) {
   dishes = [
-  {name:"مكرونة اساجتي بصلصة البولونيز", desc:"مكرونة اساجتي مع صلصة لحم غنية.", price:80, img:"images/spageti.jpg", category:"main"},
-  {name:"بيتزا مارغريتا", desc:"بيتزا كلاسيكية مع جبن موزاريلا وطماطم طازجة.", price:100, img:"images/pizza.jpg", category:"main"},
-  {name:"سلطة سيزر", desc:"خس، دجاج مشوي، خبز محمص، وصلصة سيزر.", price:70, img:"images/salad.jpg", category:"main"},
-  {name:"كباب مشوي", desc:"كباب لحم مشوي مع توابل خاصة.", price:120, img:"images/kebab.jpg", category:"main"},
-  {name:"كريب شوكولاتة", desc:"كريب رقيق محشو بشوكولاتة وفواكه طازجة.", price:50, img:"images/crep.jpg", category:"dessert"},
-  {name:"تشيز كيك", desc:"تشيز كيك كريمي مع قاعدة بسكويت.", price:60, img:"images/cheesecake.jpg", category:"dessert"},
-  {name:"عصير برتقال", desc:"عصير طبيعي طازج.", price:30, img:"images/orange.webp", category:"drinks"},
-  {name:"عصير ليمون", desc:"عصير ليمون منعش مع نعناع.", price:30, img:"images/mokheto.jpg", category:"drinks"},
-  {name:"كابتشينو", desc:"قهوة كريمية مع رغوة الحليب.", price:40, img:"images/coffee.webp", category:"drinks"}
-];
+    {name:"مكرونة اساجتي بصلصة البولونيز", desc:"مكرونة اساجتي مع صلصة لحم غنية.", price:80, img:"images/spageti.jpg", category:"main"},
+    {name:"بيتزا مارغريتا", desc:"بيتزا كلاسيكية مع جبن موزاريلا وطماطم طازجة.", price:100, img:"images/pizza.jpg", category:"main"},
+    {name:"سلطة سيزر", desc:"خس، دجاج مشوي، خبز محمص، وصلصة سيزر.", price:70, img:"images/salad.jpg", category:"main"},
+    {name:"كباب مشوي", desc:"كباب لحم مشوي مع توابل خاصة.", price:120, img:"images/kebab.jpg", category:"main"},
+    {name:"كريب شوكولاتة", desc:"كريب رقيق محشو بشوكولاتة وفواكه طازجة.", price:50, img:"images/crep.jpg", category:"dessert"},
+    {name:"تشيز كيك", desc:"تشيز كيك كريمي مع قاعدة بسكويت.", price:60, img:"images/cheesecake.jpg", category:"dessert"},
+    {name:"عصير برتقال", desc:"عصير طبيعي طازج.", price:30, img:"images/orange.webp", category:"drinks"},
+    {name:"عصير ليمون", desc:"عصير ليمون منعش مع نعناع.", price:30, img:"images/mokheto.jpg", category:"drinks"},
+    {name:"كابتشينو", desc:"قهوة كريمية مع رغوة الحليب.", price:40, img:"images/coffee.webp", category:"drinks"}
+  ];
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(dishes));
+}
+function save() {
+  
   localStorage.setItem(STORAGE_KEY, JSON.stringify(dishes));
 }
