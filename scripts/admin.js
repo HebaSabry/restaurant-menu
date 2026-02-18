@@ -1,7 +1,7 @@
 
 const correctPassword = "ah146";
 
-let dishes = JSON.parse(localStorage.getItem("dishes")) || [];
+
 let nameInput, descInput, priceInput, imgInput, categorySelect, menuDiv;
 
 // تحميل العناصر عند تحميل الصفحة
