@@ -1,5 +1,5 @@
 
-const correctPassword = "ah146";
+const correctPassword = "NOUR@2026";
 
 
 let nameInput, descInput, priceInput, imgInput, categorySelect, menuDiv;
