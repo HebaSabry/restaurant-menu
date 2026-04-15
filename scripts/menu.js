@@ -30,3 +30,4 @@ function filterCategory(category) {
 
 // عرض جميع الأطباق عند تحميل الصفحة
 displayDishes();
+console.log(dishes);
