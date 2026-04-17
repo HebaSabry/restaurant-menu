@@ -8,7 +8,7 @@ if (!dishes || dishes.length ===0) {
       {name:" سلطة", desc:"سلطة خضراء منعشة مع خبز محمص.", price:50, img:"images/سلطة.jpg", category:"salads"},
       {name: "محشي مشكل", desc: "محشي كوسا وباذنجان وفلفل محشو بالأرز واللحم.", price: 110, img: "images/محشي مشكل.jpg", category: "main" },
       {name: "حواوشي", desc: "حواوشي لحم مفروم مع توابل مصرية.", price: 80, img: "images/حواوشي.jpg", category: "main" },
-      {name: "كشري",desc: "كشري مصري تقليدي مع العدس والأرز والمكرونة.", price: 60,img: "images/images/كشري مصري.jpg", category: "main"},
+      {name: "كشري",desc: "كشري مصري تقليدي مع العدس والأرز والمكرونة.", price: 60,img:"images/كشري مصري.jpg", category: "main"},
       {name:"كبسة لحم", desc:"كبسة مع اللحم والأرز.", price:85, img:"images/كبسة لحم.jpg", category:"main"},
       {name: "محشي ورق عنب", desc: "محشي ورق عنب محشو بالأرز والخضروات.", price: 70, img: "images/محشي ورق عنب.jpg", category: "main" },
      
